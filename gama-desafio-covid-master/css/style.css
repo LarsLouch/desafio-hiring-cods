@@ -1,0 +1,360 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 7;
+  font-family: Nunito, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #4682B4;
+  text-align: left;
+  background-color: #fafbfe;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width: 570px;
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    max-width: 990px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cabecalho {
+  color: white;
+  text-align: center;
+  padding: 60px;
+  background: #4682B4;
+  background-image: url(../assets/bg/coronavirus-infection-with-copy-space.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cabecalho-title {
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+
+@media (min-width:576px) {
+  .cabecalho-title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width:768px) {
+  .cabecalho-title {
+    font-size: 52px;
+  }
+}
+
+.menunav {
+  display: flex;
+  position: relative;
+  padding: 20px 30px;
+  align-items: center;
+  -webkit-box-align: center;
+  background-color: #BBFFFF;
+  border: 0;
+  box-shadow: none;
+}
+
+@media (min-width: 992px) {
+  .menunav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.menunav a {
+  color: #6959CD;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 409px) {
+  .menunav a {
+    padding: 10px;
+  }
+}
+
+.menunav a:hover,
+.menunav a:active {
+  color: white;
+  font-size: larger;
+  background-color: #191970;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+.banner-link {
+  display: inline-block;
+  position: relative;
+  margin-right: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #191970;
+  text-align: center;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.banner-txt {
+  display: inline-block;
+  position: relative;
+  margin-right: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #3b4055;
+  text-align: center;
+  vertical-align: middle !important;
+  line-height: inherit;
+  white-space: wrap;
+}
+
+@media (min-width: 1200px) {
+  .banner-txt {
+    bottom: 30%;
+  }
+}
+
+.titulo-pagina {
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #3b4055;
+}
+
+.principal {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noticias {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.noticias-titulo {
+  color: #191970;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  flex-flow: row;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.conteudos {
+  /* colunas bootstraps */
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .conteudos {
+    max-width: 50%;
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .conteudos {
+    max-width: 33.3333333333%;
+    flex: 0 0 33.3333333333%;
+    -ms-flex: 0 0 33.3333333333%;
+    -webkit-box-flex: 0;
+  }
+}
+
+.destaque {
+  /* display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal; */
+  position: relative;
+  min-width: 0;
+  word-wrap: break-word;
+  text-align: center;
+  background-color: 	#FFC0CB;
+  background-clip: border-box;
+  border: 1px solid #	#FFC0CB
+  border-radius: 6px;
+  margin-bottom: 30px;
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);
+  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+
+.destaque:hover {
+  transform: translateY(21px) !important;
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, .125) !important;
+  -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, .125) !important;
+}
+
+.destaque-alinha-img {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.destaque-img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.destaque-alinha-txt {
+  padding-bottom: 1rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.destaque-titulo {
+  color: #3b4055;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.destaque-text {
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 15px
+}
+
+
+.saiba-mais-rodape {
+  display: flex;
+  color: white;
+  padding: 20px;
+  background-color: 	#6959CD;
+  text-decoration: none;
+}
+
+
+
+
+.social-icons {
+  text-align: left;
+  width: 500px;
+}
+
+
+
+
+footer {
+  color: 	#FFC0CB;
+  font-size: smaller;
+  text-align: center;
+  padding: 10px;
+  background-color: 	#FFC0CB;
+}
+
+footer a {
+  color: 	#FFC0CB;
+  font-size: smaller;
+}
